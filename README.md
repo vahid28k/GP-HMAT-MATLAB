@@ -14,7 +14,7 @@ The approach consists of two main ingredients: 1) Hierarchical decomposition of 
 
 The implementation includes hierarchical derivative computations for a standard log likelihood for GP training. Linear solves for n=1e6 and n=1e5 GP nodes on a single CPU takes slightly more than a minute and a few seconds respectively.
 
-The method empirically exhibits O(nlog(n)) scalability for sloving Ax=b, which supports the cost estimates obtained analytically. 
+The method empirically exhibits O(nlog(n)) scalability for sloving Ax=b, which is in suffiecient agreement with the analytical cost estimate. In some cases, empiricall results are more promising than the analytical cost estimate.  
 
 <img src="matrix_self1.png" width="400">  <img src="tree1.png" width="400" style="vertical-align:top"> 
 
