@@ -1,5 +1,5 @@
 # GP-HMAT-MATLAB
-Scalable Gaussian Process regression with Hierarchical Matrices
+Scalable Gaussian Process Regression with Hierarchical Matrices
 
 
 ## Table of contents
