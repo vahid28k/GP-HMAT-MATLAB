@@ -14,8 +14,7 @@ The approach consists of two main ingredients: 1) Hierarchical decomposition of 
 
 The method empirically exhibits O(nlog(n)) scalability which supports the cost estimates obtained analytically. 
 
-<img src="matrix_self1.png" width="400"> 
-<img src="tree1.png" width="400" style="vertical-align:middle;margin:50px 200px"> 
+<img src="matrix_self1.png" width="400">  <img src="tree1.png" width="400" style="vertical-align:top"> 
 
  
 ## Contents
