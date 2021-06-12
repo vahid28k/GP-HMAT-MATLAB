@@ -10,7 +10,7 @@ Scalable GP regression with Hierarchical Matrices
 ## General info
 This paper will be on arXiv (https://arxiv.org/abs/00000).
 ## Ingredients
-The approach consists of two main ingredients: 1) Hierarchical decomposition of a large matrix which requires aggregation of degrees of freedom in different levels of Hierarchy. This is achieved via an algebraic multigrid technique. 2) Low rank approximation of large off-diagoanl blocks which is achieved via a randomized SVD approach with interpolative decomsposition. 
+The approach consists of two main ingredients: 1) Hierarchical decomposition of a large matrix which requires aggregation (grouping) of degrees of freedom in different levels of Hierarchy. This is achieved via an algebraic multigrid technique. 2) Low rank approximation of large off-diagoanl blocks which is achieved via a randomized SVD approach with interpolative decomsposition. 
 
 The method empirically exhibits O(nlog(n)) scalability which supports the cost estimates obtained analytically. 
 
@@ -22,4 +22,4 @@ Files will be provided.
 
 ______________________
 ## Contact
-For more information please contact via vkeshava@sci.utah.edu
+For more information please contact the lead author via vkeshava@sci.utah.edu
