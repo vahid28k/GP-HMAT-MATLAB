@@ -22,7 +22,7 @@ The method empirically exhibits O(nlog(n)) scalability for sloving Ax=y, which i
 ## Contents
 HMAT folder contains necessary files for performing linear solve Ax=y. A simple MATLAB script, simple_test.m is provided to demonstrate how the main solver back_solve works. 
 
-GP-HMAT folder contains necessary files for computation of likelihood and its derivative. A simple MATLAB script, simple_test.m is provided to demonstrate how the main solver lkl_eval works. 
+GP-HMAT folder contains necessary files for computation of (log) likelihood and its derivative. A simple MATLAB script, simple_test.m is provided to demonstrate how the main solver lkl_eval works. 
 
 Large Dataset Example folder contains all necessary files for likelihood optimization and GP regression. A simple MATLAB script MAIN.m is provided to demonstrate GP likelihood optimization and GP regression associated with a large dataset described in the third numerical example of the paper.  For regression on different datasets, only training and testing datasets should be changed. 
 
