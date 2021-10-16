@@ -28,4 +28,4 @@ Large Dataset Example folder contains all necessary files for likelihood optimiz
 
 ______________________
 ## Contact
-For more information please contact the first author via vkeshava@sci.utah.edu
+For more information please contact the first author via vkeshava@sci.utah.edu.
