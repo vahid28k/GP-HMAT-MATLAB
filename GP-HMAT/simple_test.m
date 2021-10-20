@@ -23,7 +23,7 @@ n=5e3;nodes_test=nodes(:,1:n);y_test=y(1:n);y_test=y_test/norm(y_test);
 nkernel=2;l=[1];mode=1; %%you may change l to l=[1;1] to test for ARD kernel 
 
 kernel_params={nkernel l mode}; %parameter of the kernel
-cutoff_size=10;%cut off size for matrix slicing
+cutoff_size=1005;%cut off size for matrix slicing
 k=25;%rank parameter
 delta1=1e-3; %regularization for diagonal matrices
 delta2=0; %regularization for SMW correction matrix; always zero recommended
@@ -88,11 +88,10 @@ fprintf('The normalized error in determinant derivative (first variable) is %s.\
 %%%Remark 2: In case you have vector valued output in GP i.e. y is in d
 %%%dimesnions (instead of 1) and include n samples, then the energy term will be 
 %%%a d*d matrix and each component of the derivative will be d*d. In the GP likelihood optimization
-%%%%these d*d values are summed; i.e. the energy in the case of 2D y is
-%%%%(y^T_1+y^T_2 K^{-1} y_1+y_2) = y^T_1 K^{-1} y_1 + y^T_1 K^{-1} y_2 +
-%%%%y^T_2 K^{-1} y_1 +y^T_2 K^{-1} y_2. Every dimension of y is considered as a force 
-%%%%and the energy is obtained by superposition of these forces. If there
-%%%%is a knowledge on the dependence of these forces, i.e. correlation
-%%%%structure between them they could be incorporated in the way the energy is computed. 
+%%%%the diagonal entries of d*d values are summed; i.e. the energy in the case of 2D y is
+%%%%y^T_1 K^{-1} y_1 + y^T_2 K^{-1} y_2. Similarly the determinant computation is multiplied to 
+%%%%the number of dimension of y. If there is a knowledge on the dependence of these 
+%%%%right hand side vector, i.e. correlation structure between them they could be incorporated 
+%%%%in the way the energy is computed. 
 
 
