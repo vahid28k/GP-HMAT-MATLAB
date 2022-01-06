@@ -8,7 +8,8 @@ Scalable Gaussian Process Regression with Hierarchical Low Rank Matrices
 * [File Contents](#contents)
 
 ## General info
-This paper of this work is available on arXiv: [GP-HMAT: Scalable, O(nlog(n)) Gaussian Process Regression with Hierarchical Low-Rank Matrices] (https://arxiv.org/abs/2201.00888).
+This preprint of this work is available on arXiv: 
+[GP-HMAT: Scalable, O(nlog(n)) Gaussian Process Regression with Hierarchical Low-Rank Matrices](https://arxiv.org/abs/2201.00888)
 ## Ingredients
 The approach consists of two main ingredients: 1) Hierarchical decomposition of a large matrix which requires aggregation (grouping) of degrees of freedom in different levels of hierarchy. This is achieved via an algebraic multigrid technique. 2) Low rank approximation of large off-diagoanl blocks which is achieved via a randomized SVD approach with interpolative decomsposition. 
 
